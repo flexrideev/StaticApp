@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlexRide EV — Electric mobility that moves with you</title>
+  <meta name="description" content="FlexRide EV brings flexible, reliable electric mobility to people and businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="overrides.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="FlexRide EV home"><span class="bolt">ϟ</span><span>flex<span>ride</span><sup>.com</sup></span></a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav><a href="#why">Why FlexRide</a><a href="#services">Services</a><a href="#impact">Impact</a><a href="#contact">Contact</a></nav>
+    <a href="#get-started" class="nav-cta">Get Started <span>↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> ELECTRIC MOBILITY, MADE FLEXIBLE</p>
+        <h1>Move <em>freely.</em><br>Spend <em>smartly.</em></h1>
+        <p class="lede">Flexible electric rides for every shift, every street and every ambition. Lower costs, cleaner air, zero compromise.</p>
+        <div class="hero-actions"><a class="button primary" href="#get-started">Find your ride <b>→</b></a><a class="button ghost" href="#services">Explore solutions <b>↓</b></a></div>
+        <div class="proof" id="quickStats" aria-label="FlexRide performance statistics"></div>
+      </div>
+      <div class="hero-art" aria-label="Electric scooter illustration">
+        <div class="electric-ring"></div><div class="glow"></div>
+        <div class="scooter"><div class="handle"></div><div class="stem"></div><div class="body"><i></i></div><div class="seat"></div><div class="wheel wheel-a"></div><div class="wheel wheel-b"></div></div>
+        <div class="floating-card card-top"><b>01</b><span>Tap. Ride. Repeat.</span></div><div class="floating-card card-bottom"><span class="green-dot"></span><b>Ready to ride</b></div>
+      </div>
+    </section>
+
+    <div class="marquee"><div>GO ELECTRIC <i>✦</i> RIDE CLEAN <i>✦</i> FLEXIBLE PLANS <i>✦</i> GREEN MILES <i>✦</i> GO ELECTRIC <i>✦</i> RIDE CLEAN <i>✦</i> FLEXIBLE PLANS <i>✦</i></div></div>
+
+    <section class="why section" id="why">
+      <div class="section-intro"><p class="eyebrow">01 / WHY FLEXRIDE</p><h2>A better way<br>to get <em>around.</em></h2></div>
+      <p class="intro-copy">Whether you’re on a delivery run or simply heading across town, FlexRide makes an electric life uncomplicated.</p>
+      <div class="feature-grid" id="featureGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="steps section" id="get-started">
+      <div class="phone"><div class="phone-notch"></div><div class="app-head"><span>09:41</span><b>flex<span>ride</span></b><span>●</span></div><p>Good morning, Alex</p><h3>Where are we<br>riding today?</h3><div class="map"><i class="pin p1"></i><i class="pin p2"></i><div class="route"></div></div><div class="ride-now"><span>⚡</span><div><b>Nearby FlexRide</b><small>2 min away · 89% charged</small></div><button>Unlock</button></div></div>
+      <div class="steps-copy"><p class="eyebrow">02 / IN YOUR POCKET</p><h2>Your next ride,<br>in <em>four taps.</em></h2><p class="intro-copy">The FlexRide app puts a lighter, smarter commute at your fingertips.</p><ol><li><span>01</span><div><b>Download the app</b><p>Find FlexRide on the Play Store or App Store.</p></div></li><li><span>02</span><div><b>Verify your account</b><p>A quick, secure check and you’re ready to go.</p></div></li><li><span>03</span><div><b>Choose your flex plan</b><p>Pick the EV and plan that suit your day.</p></div></li><li><span>04</span><div><b>Unlock and ride</b><p>Scan, go and see your savings add up.</p></div></li></ol></div>
+    </section>
+
+    <section class="services section" id="services"><div class="section-intro"><p class="eyebrow">03 / THE FLEXRIDE ECOSYSTEM</p><h2>Everything your<br>EV journey <em>needs.</em></h2></div><div class="service-grid" id="serviceGrid" aria-live="polite"></div></section>
+
+    <section class="impact section" id="impact"><div><p class="eyebrow">04 / CALCULATE YOUR IMPACT</p><h2>Small switch.<br><em>Big difference.</em></h2><p class="intro-copy">See what an electric commute could save you each month.</p></div><div class="calculator"><label>Daily commute <output id="distanceValue">24 km</output><input id="distance" type="range" min="5" max="100" value="24"></label><label>Fuel price <output id="fuelValue">₹ 105/L</output><input id="fuel" type="range" min="80" max="150" value="105"></label><label>Current mileage <output id="mileageValue">38 km/L</output><input id="mileage" type="range" min="20" max="80" value="38"></label><div class="results"><div><span>CO₂ avoided</span><b id="co2">31 kg</b><small>per month</small></div><div><span>Fuel saved</span><b id="litres">19 L</b><small>per month</small></div><div><span>Money saved</span><b id="money">₹ 1,995</b><small>per month</small></div></div></div></section>
+
+    <section class="cities section"><p class="eyebrow">05 / FIND US NEAR YOU</p><h2>FlexRide is closer<br>than you <em>think.</em></h2><div class="city-row" id="cityRow" aria-live="polite"></div><div class="image-strip" id="imageStrip" aria-label="FlexRide electric mobility scenes"></div></section>
+
+    <section class="contact section" id="contact"><div><p class="eyebrow">06 / LET’S TALK</p><h2>Ready when<br>you <em>are.</em></h2><p class="intro-copy">Need a fleet solution, partnership, or a little help choosing a ride? We’d love to hear from you.</p><a class="button primary" href="mailto:hello@flexride.com">hello@flexride.com <b>↗</b></a></div><form><label>Your name<input placeholder="Name"></label><label>Work email<input type="email" placeholder="you@company.com"></label><label>What can we help with?<textarea placeholder="Tell us a little about it"></textarea></label><button class="button primary" type="button" id="formButton">Send message <b>→</b></button><p class="form-note" id="formNote"></p></form></section>
+  </main>
+  <footer><a href="#home" class="brand"><span class="bolt">ϟ</span><span>flex<span>ride</span><sup>.com</sup></span></a><p>Electric mobility that moves with you.</p><div><a href="#why">About</a><a href="#services">Business</a><a href="#contact">Contact</a></div><small>© 2026 FlexRide EV. All rights reserved.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
